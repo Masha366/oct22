@@ -1,13 +1,17 @@
-def function1 (*args):
-    l=len(args)
+def function2(stroka):
+    spisok=[]
+    dlina=len(stroka)
+    i=0
     s=0
-    c=0
-    while c<l:
-       s=s+args[c]
-       c=c+1
-    return s
-
-
+    while i<dlina:
+        spisok.append(stroka[dlina-(i+1)])
+        if stroka[i]==spisok[i]:
+            s=s+1
+        i+=1
+    if s==dlina:
+        return True
+    else:
+        return False
 
 
 
