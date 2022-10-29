@@ -1,16 +1,17 @@
-def function1 (*args):
-        l=len(args)
-        s=0
-        c=0
-        while c<l:
-            if type(args[c]) == int or type(args[c]) == float:
-                s=s+args[c]
-                c=c+1
-            else:
-                return "Error"
-        return s
-print(function1(1, 3, 10))
-
+def function2(stroka):
+    spisok=[]
+    dlina=len(stroka)
+    i=0
+    s=0
+    while i<dlina:
+        spisok.append(stroka[dlina-(i+1)])
+        if stroka[i]==spisok[i]:
+            s=s+1
+        i+=1
+    if s==dlina:
+        return True
+    else:
+        return False
 
 
 
